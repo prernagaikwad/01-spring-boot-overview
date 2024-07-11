@@ -1,0 +1,29 @@
+package com.prernagaikwad.springboot.demo.Myspringbootapp.rest;
+
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+public class FunRestController
+{
+    // expose "/" that return "Hello World"
+
+    @GetMapping("/")
+    public String SayHello()
+    {
+        return "Hello World !" ;
+    }
+
+
+     @GetMapping("/Workout")
+
+    public String getDailyWorkout()
+     {
+
+         return "Run a hard 5K !" ;
+     }
+
+
+
+
+}
